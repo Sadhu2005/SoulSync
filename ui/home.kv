@@ -1,0 +1,27 @@
+<MainLayout>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 15
+
+    Label:
+        text: "🧠 SoulSync - Your Mind Companion"
+        font_size: 24
+        size_hint_y: None
+        height: self.texture_size[1]
+
+    TextInput:
+        id: journal_input
+        hint_text: "Write your thoughts here..."
+        multiline: True
+        size_hint_y: 0.6
+
+    Button:
+        text: "📝 Analyze + Save"
+        size_hint_y: None
+        height: "40dp"
+        on_press: root.on_submit()
+
+    Label:
+        id: mood_label
+        text: "Mood: "
+        font_size: 18
